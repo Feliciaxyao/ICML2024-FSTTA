@@ -11,6 +11,9 @@ State Key Laboratory of Multimodal Artificial Intelligence Systems, Institute of
 
 [Paper Link on ICML 2024](https://icml.cc/virtual/2024/poster/33723) 
 
+## Usage
+Our code will be coming soon!
+
 
 ## Acknowledgements
 Our code is based on [DUET](https://github.com/cshizhe/VLN-DUET). Thanks to the authors for sharing their code.
@@ -22,7 +25,7 @@ Our code is based on [DUET](https://github.com/cshizhe/VLN-DUET). Thanks to the 
 
 ## Citation
 
-Feel free to cite this work if you find it useful to you!
+If you find this project useful in your research, please consider cite:
 ```
 @inproceedings{Gao2024VideoEV,
   title={Fast-Slow Test-time Adaptation for Online Vision-and-Language Navigation},
@@ -32,3 +35,5 @@ Feel free to cite this work if you find it useful to you!
   url={}
 }
 ```
+
+If you have any questions, comments or suggestions, please feel free to get in touch with us via the contact information below: junyu.gao@nlpr.ia.ac.cn.
