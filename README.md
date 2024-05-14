@@ -27,7 +27,7 @@ Our code is based on [DUET](https://github.com/cshizhe/VLN-DUET). Thanks to the 
 
 If you find this project useful in your research, please consider cite:
 ```
-@inproceedings{Gao2024VideoEV,
+@inproceedings{Gao2024Fast,
   title={Fast-Slow Test-time Adaptation for Online Vision-and-Language Navigation},
   author={Junyu Gao and Xuan Yao and Changsheng Xu},
   journal={Proceedings of the 41st International Conference on Machine Learning},
