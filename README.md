@@ -16,7 +16,7 @@ Our code will be coming soon!
 
 
 ## Acknowledgements
-Our code is based on [DUET](https://github.com/cshizhe/VLN-DUET). Thanks to the authors for sharing their code.
+Our implementations are partially based on [VLN-DUET](https://github.com/cshizhe/VLN-DUET), [HM3DAutoVLN](https://github.com/cshizhe/HM3DAutoVLN) and [VLN-BEVBert](https://github.com/MarSaKi/VLN-BEVBert.git). Thanks to the authors for sharing their code.
 
 
 ## Related Work
