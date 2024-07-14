@@ -11,7 +11,7 @@ State Key Laboratory of Multimodal Artificial Intelligence Systems, Institute of
 
 [Paper Link on ICML 2024](https://icml.cc/virtual/2024/poster/33723) 
 
-## Usage
+## Usage (TODO)
 Our code will be coming soon!
 
 
