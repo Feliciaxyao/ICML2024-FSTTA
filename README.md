@@ -12,7 +12,60 @@ State Key Laboratory of Multimodal Artificial Intelligence Systems, Institute of
 [Paper Link on ICML 2024](https://icml.cc/virtual/2024/poster/33723) 
 
 ## Usage (TODO)
-Our code will be coming soon!
+
+### Prerequisites
+
+1. Install Matterport3D simulators: follow instructions [here](https://github.com/peteanderson80/Matterport3DSimulator). We use the latest version the same as DUET.
+```
+export PYTHONPATH=Matterport3DSimulator/build:$PYTHONPATH
+```
+
+2. Install requirements:
+```setup
+conda create --name fsvln python=3.8.5
+conda activate fsvln
+```
+* Required packages are listed in `requirements.txt`. You can install by running:
+
+```
+pip install -r requirements.txt
+```
+
+3. Please download data from [Dropbox](https://www.dropbox.com/sh/u3lhng7t2gq36td/AABAIdFnJxhhCg2ItpAhMtUBa?dl=0), including processed annotations, features and pretrained models of REVERIE datasets and R2R datasets. 
+Before running the code, please put the data in `datasets' directory.
+
+4. Please download pretrained LXMERT model by running:
+```
+mkdir -p datasets/pretrained 
+wget https://nlp.cs.unc.edu/data/model_LXRT.pth -P datasets/pretrained
+```
+
+
+### Pretraining (Base Model)
+
+Combine behavior cloning and auxiliary proxy tasks in pretraining:
+```pretrain
+cd pretrain_src
+bash run_reverie.sh 
+```
+
+
+
+### Fine-tuning (Base Model)
+
+Use pseudo interative demonstrator to fine-tune the model:
+```finetune
+cd map_nav_src
+bash scripts/run_reverie.sh 
+```
+
+### Test-time Adaptation & Evaluation
+
+Use pseudo interative demonstrator to equip the model with our FSTTA:
+```TTA during test time
+cd map_nav_src
+bash scripts/run_reverie_tta.sh 
+
 
 
 ## Acknowledgements
