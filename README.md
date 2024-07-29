@@ -64,7 +64,7 @@ bash scripts/run_reverie.sh
 Use pseudo interative demonstrator to equip the model with our FSTTA:
 ```TTA during test time
 cd map_nav_src
-bash scripts/run_reverie_tta.sh
+
 ```
 
 
