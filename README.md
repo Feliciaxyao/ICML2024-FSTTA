@@ -11,7 +11,7 @@ State Key Laboratory of Multimodal Artificial Intelligence Systems, Institute of
 
 [Paper Link on ICML 2024](https://icml.cc/virtual/2024/poster/33723) 
 
-## Usage (TODO)
+## Usage
 
 ### Prerequisites
 
@@ -64,7 +64,7 @@ bash scripts/run_reverie.sh
 Use pseudo interative demonstrator to equip the model with our FSTTA:
 ```TTA during test time
 cd map_nav_src
-
+bash scrips/run_reverie_tta.sh
 ```
 
 
