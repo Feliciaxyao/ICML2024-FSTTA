@@ -13,6 +13,29 @@ State Key Laboratory of Multimodal Artificial Intelligence Systems, Institute of
 
 ## Usage
 
+### 🔄 Update Notes for Detailed Modules of FSTTA
+
+We have added additional comments and clarifying notes to the FAST and SLOW components of the FSTTA framework.
+These notes help readers more easily align the code with the equations presented in the paper and understand how the adaptation pipeline is organized in practice.
+
+The update includes:
+- clearer explanations for gradient decomposition–accumulation,
+- notes for dynamic learning-rate scaling,
+- clarification on how parameter trajectories are maintained across samples,
+- guidance on the construction of the reference direction for the SLOW update.
+
+The underlying implementation logic remains unchanged, and all existing checkpoints, pretrained models, and scripts continue to work as before.
+
+**(1) Fast Update Module**
+- Gradient decomposition and concordant direction explanation: FSTTA.py L132–L210  
+- Dynamic learning-rate scaling: FSTTA.py L212–L260  
+- Usage details in rollout: agent_obj.py L450–L520
+
+**(2) Slow Update Module**
+- Parameter trajectory accumulation: agent_obj.py L540–L600  
+- Reference direction construction (Eq. 8): agent_obj.py L600–L640  
+- Slow principal update path: FSTTA.py L300–L360  
+
 ### Prerequisites
 
 1. Install Matterport3D simulators: follow instructions [here](https://github.com/peteanderson80/Matterport3DSimulator). We use the latest version the same as DUET.
