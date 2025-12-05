@@ -27,14 +27,15 @@ The update includes:
 The underlying implementation logic remains unchanged, and all existing checkpoints, pretrained models, and scripts continue to work as before.
 
 **(1) Fast Update Module**
-- Gradient decomposition and concordant direction explanation: FSTTA.py L132–L210  
-- Dynamic learning-rate scaling: FSTTA.py L212–L260  
-- Usage details in rollout: agent_obj.py L450–L520
+- Gradient decomposition and concordant direction explanation: [FSTTA.py](https://github.com/Feliciaxyao/ICML2024-FSTTA/blob/a6aa554f6de2acd72af83d555cd3f94c05140397/map_nav_src/models/FSTTA.py#L76-L138)  
+- Dynamic learning-rate scaling: [FSTTA.py](https://github.com/Feliciaxyao/ICML2024-FSTTA/blob/a6aa554f6de2acd72af83d555cd3f94c05140397/map_nav_src/models/FSTTA.py#L140-L168)  
+- Usage details in rollout: [agent_obj.py](https://github.com/Feliciaxyao/ICML2024-FSTTA/blob/a6aa554f6de2acd72af83d555cd3f94c05140397/map_nav_src/reverie/agent_obj.py#L374-L382)
 
 **(2) Slow Update Module**
-- Parameter trajectory accumulation: agent_obj.py L540–L600  
-- Reference direction construction (Eq. 8): agent_obj.py L600–L640  
-- Slow principal update path: FSTTA.py L300–L360  
+- Parameter trajectory accumulation: [agent_obj.py](https://github.com/Feliciaxyao/ICML2024-FSTTA/blob/a6aa554f6de2acd72af83d555cd3f94c05140397/map_nav_src/reverie/agent_obj.py#L593-L597)
+- Reference direction construction: [agent_obj.py](https://github.com/Feliciaxyao/ICML2024-FSTTA/blob/a6aa554f6de2acd72af83d555cd3f94c05140397/map_nav_src/reverie/agent_obj.py#L599-L607)  
+- Slow principal update path: [FSTTA.py](https://github.com/Feliciaxyao/ICML2024-FSTTA/blob/a6aa554f6de2acd72af83d555cd3f94c05140397/map_nav_src/models/FSTTA.py#L308-L332)
+
 
 ### Prerequisites
 
