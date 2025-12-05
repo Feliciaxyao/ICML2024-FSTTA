@@ -407,12 +407,6 @@ class GMapObjectNavAgent(Seq2SeqAgent):
             origin_weights = ParamDict(self.net_slow.named_parameters())
             self.ref_diff = origin_weights - origin_weights  # zero-like ParamDict
         
-        # origin parameters for slow stage
-        if id == 0:
-            params_origin = fstta.inner_params(net)
-            net_slow = copy.deepcopy(net)
-            slow_params, slow_param_names = fstta.collect_params(net_slow)
-            optimizer_slow = torch.optim.AdamW(slow_params, lr_slow, betas=(0.9, 0.99))
         
 
         # When a test sample comes
