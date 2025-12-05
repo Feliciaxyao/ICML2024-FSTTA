@@ -11,8 +11,7 @@ State Key Laboratory of Multimodal Artificial Intelligence Systems, Institute of
 
 [Paper Link on ICML 2024](https://icml.cc/virtual/2024/poster/33723) 
 
-## Usage
-
+---------------------------------------------------------------------
 ### 🔄 Update Notes for Detailed Modules of FSTTA
 
 We have added additional comments and clarifying notes to the FAST and SLOW components of the FSTTA framework.
@@ -36,6 +35,9 @@ The underlying implementation logic remains unchanged, and all existing checkpoi
 - Reference direction construction: [agent_obj.py](https://github.com/Feliciaxyao/ICML2024-FSTTA/blob/a6aa554f6de2acd72af83d555cd3f94c05140397/map_nav_src/reverie/agent_obj.py#L599-L607)  
 - Slow principal update path: [FSTTA.py](https://github.com/Feliciaxyao/ICML2024-FSTTA/blob/a6aa554f6de2acd72af83d555cd3f94c05140397/map_nav_src/models/FSTTA.py#L308-L332)
 
+---------------------------------------------------------------------
+
+## Usage
 
 ### Prerequisites
 
